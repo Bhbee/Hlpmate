@@ -40,6 +40,3 @@ faiss_index/
 
 # Git filter backup
 .git-rewrite/
-
-# YAML or secret configs (optional if not meant for sharing)
-configs/*.yml

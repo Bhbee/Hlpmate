@@ -1,0 +1,29 @@
+llm_config:
+  engine: "gpt-4"
+  llm_system_role: "You are a helpful academic assistant."
+  temperature: 0.5
+
+directories:
+  persist_directory: "data/vectordb"
+  custom_persist_directory: "vectorstore/custom"
+  data_directory: "data/uploads"
+
+embedding_model_config:
+  engine: "text-embedding-ada-002"
+
+retrieval_config:
+  k: 5
+
+splitter_config:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+summarizer_config:
+  max_final_token: 3000
+  token_threshold: 2000
+  summarizer_llm_system_role: "Summarize academic documents."
+  final_summarizer_llm_system_role: "Provide a final summary."
+  character_overlap: 50
+
+memory:
+  number_of_q_a_pairs: 5
