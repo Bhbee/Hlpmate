@@ -1,0 +1,45 @@
+# Ignore environment variables
+.env
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
+*.streamlit/
+
+# Vector DB folders (Chroma, FAISS)
+vectorstore/
+custom_db/
+chroma_db/
+faiss_index/
+
+# Log files
+*.log
+
+# Excel or temporary files
+~$*.xls*
+*.tmp
+*.bak
+*.swp
+
+# Git filter backup
+.git-rewrite/
+
+# YAML or secret configs (optional if not meant for sharing)
+configs/*.yml

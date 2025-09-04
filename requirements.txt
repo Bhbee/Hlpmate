@@ -1,0 +1,29 @@
+# Core app dependencies
+streamlit
+python-dotenv
+pyyaml
+tiktoken
+docx2txt
+
+# OpenAI SDK v1.x
+openai>=1.0.0
+
+# LangChain ecosystem
+langchain
+langchain-community
+langchain-openai
+langchain-chroma
+
+# Document loaders and file handling
+unstructured[all-docs]
+python-docx         # For DOCX support
+python-pptx         # For PPTX support
+pandas              # For XLSX and data handling
+openpyxl            # Required for reading Excel files
+
+# PDF parsing
+PyPDF2
+
+# Optional enhancements
+pyprojroot          # For root directory resolution
+matplotlib          # For score visualization
