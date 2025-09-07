@@ -27,3 +27,4 @@ PyPDF2
 # Optional enhancements
 pyprojroot          # For root directory resolution
 matplotlib          # For score visualization
+pysqlite3-binary
