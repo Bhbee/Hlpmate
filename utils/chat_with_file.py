@@ -1,3 +1,10 @@
+try:
+    import pysqlite3
+    import sys
+    sys.modules["sqlite3"] = pysqlite3
+except ImportError:
+    pass  # Use built-in sqlite3 on Windows/local
+    
 import traceback
 import streamlit as st
 from utils.prepare_vectordb import PrepareVectorDB
